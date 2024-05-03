@@ -54,6 +54,12 @@ public class Main {
         
         System.out.println("La media de la pelicula "
                 + "Matrix calculada por el usuario es: " + mediaEvaluacionUsuarios / 3);
+        int i = 0;
+        
+        while (i < 3) {
+            System.out.println("Hola " + (i+1));
+            i++;
+        }
     }
     
 }
