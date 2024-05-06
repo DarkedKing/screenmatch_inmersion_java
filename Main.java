@@ -2,6 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
+import modelo.Peliculas;
+import modelo.Serie;
 import java.util.Scanner;
 /**
  *
@@ -14,52 +16,38 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        System.out.println("Bienvenidos a la inmersion de java");
-        //System.out.println("Pelicula Matrix");
+        //Polimorfismo de la clase Principal
+        Principal principal = new Principal();
+        principal.muestraElMenu();
         
-        // Declaracion de Variables
-        int fechaDeLanzamiento = 1999;
-        double evaluacion = 4.5;
-        boolean incluidoEnElPlanBasico = true;
-        String nombre = "Matrix";
-        String sinopsis = """
-                          La mejor pelicula del fin del milenio
-                          """;
-        double mediaEvaluacionUsuarios = 0;
+//        //Orientacion por medio de Encapsulacion de la clase Titulp
+//        Peliculas spiderman = new Peliculas();
+//        spiderman.setNombre("Matrix");
+//        spiderman.setTiempoDeDuracionEnMinutos(120);
+//        spiderman.setFechaDeLanzamiento(1999); 
+//        
+//        spiderman.muestraFichaTecnica();
+//        
+//        Serie friends = new Serie();
+//        friends.setNombre("Friends");
+//        friends.setFechaDeLanzamiento(1996);
+//        friends.setTemporadas(10);
+//        friends.setEpisodiosPorTemporada(22);
+//        friends.setDuracionEnMinutosPorEpisodios(30);
+//        
+//        System.out.println("");
+//        friends.muestraFichaTecnica();
         
-        
-        System.out.println("Pelicula: " + nombre);
-        System.out.println ("Fecha de produccion: " + fechaDeLanzamiento);
-        System.out.println("Valoracion: " + evaluacion);
-        System.out.println("Se incluye en el plan basico? " + incluidoEnElPlanBasico);
-        
-        double mediaEvaluacion = (4.5 + 4.8 + 3) / 3;
-        
-        System.out.println("Media de la evaluacion de " + nombre + " " + mediaEvaluacion);
-        
-        //Condicionales
-        if (fechaDeLanzamiento >= 2023){
-            System.out.println("Pelicula popular del momento");
-        }
-        else{
-            System.out.println("Pelicula retro que vale la pena ver");
-        }
-        
-        for (int i=0; i<3; i++){
-            System.out.println("Ingrese la nota que le darias a Matrix: ");
-            Scanner teclado = new Scanner(System.in);
-            double notaMatrix = teclado.nextDouble();
-            mediaEvaluacionUsuarios = mediaEvaluacionUsuarios + notaMatrix;
-        }
-        
-        System.out.println("La media de la pelicula "
-                + "Matrix calculada por el usuario es: " + mediaEvaluacionUsuarios / 3);
-        int i = 0;
-        
-        while (i < 3) {
-            System.out.println("Hola " + (i+1));
-            i++;
-        }
+        //Prientacion por medio de Abstraccion
+//        Peliculas encanto = new Peliculas();
+//        encanto.nombre = "Encanto";
+//        encanto.tiempoDeDuracionEnMinutos = 120;
+//        encanto.fechaDeLanzamiento = 2022;
+//        
+//        //Trayendo metodo de la clase
+//        encanto.muestraFichaTecnica();
+//        System.out.println("");
+//        spiderman.muestraFichaTecnica();
+
     }
-    
 }
